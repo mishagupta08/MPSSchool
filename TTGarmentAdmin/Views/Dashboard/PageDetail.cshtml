@@ -1,0 +1,50 @@
+﻿@model IEnumerable<TTGarmentAdmin.Models.SchoolMedia>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string FileUrl = "https://shopimage.bisplindia.in/SchoolData";
+}
+
+
+
+<!-- Icon Cards-->
+<div class="row">
+    <div class="col-lg-12">
+        <h3 class="paddtop1 dosis font-weight-5 lspace-sm bluetext">@ViewBag.Header</h3>
+    </div>
+    <table border="1">
+    @foreach (var media in Model)
+    {
+        <tr>
+        @if (media.MediaType == "12")
+        {
+                <td style="padding: 10px;">
+                    <a href="@media.MediaUrl" target="_blank" > @media.Class (@media.Section) - @media.MediaUrl </a><br/>
+                </td>
+            <td style="padding: 10px;">
+                
+            </td>
+                
+                   }
+                   else
+                   {
+            
+                <td style="padding: 10px;">
+                    <a href="@media.MediaUrl" target="_blank">@media.Class (@media.Section) - @media.MediaUrl</a><br />
+                    </td>
+                <td style="padding: 10px;">
+                    <a href="#" style="display:none;" onclick="DownloadFile('@media.MediaUrl')">download</a>
+                 @Html.ActionLink("Download", "DownloadFile", new { File = media.MediaUrl })</td>
+
+        }
+
+            </tr>
+    }
+        </table>
+            @*<iframe src="https://shopimage.bisplindia.in/SchoolData/a89c35bcgoair.txt"></iframe>*@
+        </div>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/project/dashboard.js?v=1"></script>
+
+
