@@ -16,7 +16,7 @@ function ValidateLoginUser() {
         data: loginDetail
     }).done(function (result) {
         if (result == "") {
-            window.location.href = 'Dashboard/Index';
+            window.location.href = '/Dashboard/Index';
         }
         else {
             $("#loginError").html(result);
