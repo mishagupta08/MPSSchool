@@ -181,7 +181,6 @@
     <Content Include="images\delete.png" />
     <Content Include="images\edit.png" />
     <Content Include="images\wheel.gif" />
-    <Content Include="index.asp" />
     <Content Include="js\Chart.js" />
     <Content Include="js\sb-admin-charts.js" />
     <Content Include="js\sb-admin-charts.min.js" />
@@ -2631,7 +2630,13 @@
     <Content Include="NewJs\vendors\tinymce\js\tinymce\skins\lightgray\fonts\icomoon.ttf" />
     <Content Include="NewJs\vendors\tinymce\js\tinymce\skins\lightgray\fonts\icomoon.woff" />
     <Content Include="NewJs\vendors\tinymce\js\tinymce\skins\lightgray\fonts\readme.md" />
+    <Content Include="zoomjs\device.min.js" />
+    <Content Include="zoomjs\expand.min.js" />
+    <Content Include="zoomjs\jquery.fancybox.css" />
+    <Content Include="zoomjs\jquery.fancybox.pack.js" />
+    <Content Include="zoomjs\modernizr.custom.32033.js" />
     <None Include="Properties\PublishProfiles\TTAdmin.pubxml" />
+    <Content Include="Registration Form.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\gridmvc.js" />
     <Content Include="Scripts\gridmvc.lang.ru.js" />

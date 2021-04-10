@@ -23,7 +23,7 @@ namespace TTGarmentAdmin.Controllers
         public ActionResult LogOut()
         {
             Session["LoginUserName"] = null;
-            return RedirectToAction("Index", "Login");
+            return RedirectToAction("Index", "Home");
         }
 
         public ActionResult PrivacyPolicy()
