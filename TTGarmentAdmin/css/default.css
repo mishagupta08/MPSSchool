@@ -5708,6 +5708,12 @@ font-size:13px;
 	.bluetext{
 	color:#29166f;
 	}
+    @media (max-width : 767px) {
+	.table-scroll{
+		overflow-x: auto;
+		width: 100%;
+	}
+}
 	
 	
 	
